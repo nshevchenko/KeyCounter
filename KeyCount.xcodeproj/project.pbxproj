@@ -7,13 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2408AA941AFBE1EB007E4ACC /* Counter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2408AA931AFBE1EB007E4ACC /* Counter.m */; };
+		2408AA951AFBE34F007E4ACC /* SettingsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 249AB17A1AFAC897006B7F89 /* SettingsController.m */; };
 		241E82EC1AF3158F009DF9C1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 241E82EB1AF3158F009DF9C1 /* AppDelegate.m */; };
 		241E82EE1AF3158F009DF9C1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 241E82ED1AF3158F009DF9C1 /* main.m */; };
-		241E82F11AF3158F009DF9C1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 241E82F01AF3158F009DF9C1 /* ViewController.m */; };
+		241E82F11AF3158F009DF9C1 /* MainWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 241E82F01AF3158F009DF9C1 /* MainWindowController.m */; };
 		241E82F41AF3158F009DF9C1 /* KeyCount.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 241E82F21AF3158F009DF9C1 /* KeyCount.xcdatamodeld */; };
 		241E82F61AF3158F009DF9C1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 241E82F51AF3158F009DF9C1 /* Images.xcassets */; };
 		241E82F91AF3158F009DF9C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 241E82F71AF3158F009DF9C1 /* Main.storyboard */; };
 		241E83051AF3158F009DF9C1 /* KeyCountTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 241E83041AF3158F009DF9C1 /* KeyCountTests.m */; };
+		241EF2871AFC30F2004A27F0 /* button.png in Resources */ = {isa = PBXBuildFile; fileRef = 241EF2831AFC30F2004A27F0 /* button.png */; };
+		241EF2881AFC30F2004A27F0 /* buttonOn.png in Resources */ = {isa = PBXBuildFile; fileRef = 241EF2841AFC30F2004A27F0 /* buttonOn.png */; };
+		241EF2891AFC30F2004A27F0 /* emailB.png in Resources */ = {isa = PBXBuildFile; fileRef = 241EF2851AFC30F2004A27F0 /* emailB.png */; };
+		241EF28A1AFC30F2004A27F0 /* quit.png in Resources */ = {isa = PBXBuildFile; fileRef = 241EF2861AFC30F2004A27F0 /* quit.png */; };
+		241EF28D1AFC319A004A27F0 /* githubB.png in Resources */ = {isa = PBXBuildFile; fileRef = 241EF28B1AFC319A004A27F0 /* githubB.png */; };
+		241EF28E1AFC319A004A27F0 /* resetB.png in Resources */ = {isa = PBXBuildFile; fileRef = 241EF28C1AFC319A004A27F0 /* resetB.png */; };
+		249AB1781AFAA9CA006B7F89 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 249AB1771AFAA9CA006B7F89 /* QuartzCore.framework */; };
+		24C3DC281AF91EDA004DDD53 /* Status@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 24C3DC271AF91EDA004DDD53 /* Status@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,19 +37,31 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2408AA921AFBE1EB007E4ACC /* Counter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Counter.h; sourceTree = "<group>"; };
+		2408AA931AFBE1EB007E4ACC /* Counter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Counter.m; sourceTree = "<group>"; };
 		241E82E51AF3158F009DF9C1 /* KeyCount.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeyCount.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		241E82E91AF3158F009DF9C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		241E82EA1AF3158F009DF9C1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		241E82EB1AF3158F009DF9C1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		241E82ED1AF3158F009DF9C1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		241E82EF1AF3158F009DF9C1 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		241E82F01AF3158F009DF9C1 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		241E82EF1AF3158F009DF9C1 /* MainWindowController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainWindowController.h; sourceTree = "<group>"; };
+		241E82F01AF3158F009DF9C1 /* MainWindowController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainWindowController.m; sourceTree = "<group>"; };
 		241E82F31AF3158F009DF9C1 /* KeyCount.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = KeyCount.xcdatamodel; sourceTree = "<group>"; };
 		241E82F51AF3158F009DF9C1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		241E82F81AF3158F009DF9C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		241E82FE1AF3158F009DF9C1 /* KeyCountTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KeyCountTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		241E83031AF3158F009DF9C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		241E83041AF3158F009DF9C1 /* KeyCountTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeyCountTests.m; sourceTree = "<group>"; };
+		241EF2831AFC30F2004A27F0 /* button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = button.png; path = Images.xcassets/button.png; sourceTree = "<group>"; };
+		241EF2841AFC30F2004A27F0 /* buttonOn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = buttonOn.png; path = Images.xcassets/buttonOn.png; sourceTree = "<group>"; };
+		241EF2851AFC30F2004A27F0 /* emailB.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = emailB.png; path = Images.xcassets/emailB.png; sourceTree = "<group>"; };
+		241EF2861AFC30F2004A27F0 /* quit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = quit.png; path = Images.xcassets/quit.png; sourceTree = "<group>"; };
+		241EF28B1AFC319A004A27F0 /* githubB.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = githubB.png; path = Images.xcassets/githubB.png; sourceTree = "<group>"; };
+		241EF28C1AFC319A004A27F0 /* resetB.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = resetB.png; path = Images.xcassets/resetB.png; sourceTree = "<group>"; };
+		249AB1771AFAA9CA006B7F89 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		249AB1791AFAC897006B7F89 /* SettingsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsController.h; sourceTree = "<group>"; };
+		249AB17A1AFAC897006B7F89 /* SettingsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsController.m; sourceTree = "<group>"; };
+		24C3DC271AF91EDA004DDD53 /* Status@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Status@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				249AB1781AFAA9CA006B7F89 /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +86,7 @@
 		241E82DC1AF3158F009DF9C1 = {
 			isa = PBXGroup;
 			children = (
+				249AB1771AFAA9CA006B7F89 /* QuartzCore.framework */,
 				241E82E71AF3158F009DF9C1 /* KeyCount */,
 				241E83011AF3158F009DF9C1 /* KeyCountTests */,
 				241E82E61AF3158F009DF9C1 /* Products */,
@@ -81,13 +105,8 @@
 		241E82E71AF3158F009DF9C1 /* KeyCount */ = {
 			isa = PBXGroup;
 			children = (
-				241E82EA1AF3158F009DF9C1 /* AppDelegate.h */,
-				241E82EB1AF3158F009DF9C1 /* AppDelegate.m */,
-				241E82EF1AF3158F009DF9C1 /* ViewController.h */,
-				241E82F01AF3158F009DF9C1 /* ViewController.m */,
-				241E82F51AF3158F009DF9C1 /* Images.xcassets */,
-				241E82F71AF3158F009DF9C1 /* Main.storyboard */,
-				241E82F21AF3158F009DF9C1 /* KeyCount.xcdatamodeld */,
+				241EF28F1AFC31AF004A27F0 /* Images */,
+				241E83131AF3ED39009DF9C1 /* code */,
 				241E82E81AF3158F009DF9C1 /* Supporting Files */,
 			);
 			path = KeyCount;
@@ -96,6 +115,8 @@
 		241E82E81AF3158F009DF9C1 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				241E82F71AF3158F009DF9C1 /* Main.storyboard */,
+				241E82F21AF3158F009DF9C1 /* KeyCount.xcdatamodeld */,
 				241E82E91AF3158F009DF9C1 /* Info.plist */,
 				241E82ED1AF3158F009DF9C1 /* main.m */,
 			);
@@ -117,6 +138,36 @@
 				241E83031AF3158F009DF9C1 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		241E83131AF3ED39009DF9C1 /* code */ = {
+			isa = PBXGroup;
+			children = (
+				249AB1791AFAC897006B7F89 /* SettingsController.h */,
+				249AB17A1AFAC897006B7F89 /* SettingsController.m */,
+				241E82EA1AF3158F009DF9C1 /* AppDelegate.h */,
+				241E82EB1AF3158F009DF9C1 /* AppDelegate.m */,
+				241E82EF1AF3158F009DF9C1 /* MainWindowController.h */,
+				241E82F01AF3158F009DF9C1 /* MainWindowController.m */,
+				2408AA921AFBE1EB007E4ACC /* Counter.h */,
+				2408AA931AFBE1EB007E4ACC /* Counter.m */,
+			);
+			name = code;
+			sourceTree = "<group>";
+		};
+		241EF28F1AFC31AF004A27F0 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				241E82F51AF3158F009DF9C1 /* Images.xcassets */,
+				241EF28B1AFC319A004A27F0 /* githubB.png */,
+				241EF28C1AFC319A004A27F0 /* resetB.png */,
+				24C3DC271AF91EDA004DDD53 /* Status@2x.png */,
+				241EF2831AFC30F2004A27F0 /* button.png */,
+				241EF2841AFC30F2004A27F0 /* buttonOn.png */,
+				241EF2851AFC30F2004A27F0 /* emailB.png */,
+				241EF2861AFC30F2004A27F0 /* quit.png */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,8 +250,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				241EF28E1AFC319A004A27F0 /* resetB.png in Resources */,
+				241EF28A1AFC30F2004A27F0 /* quit.png in Resources */,
+				241EF2881AFC30F2004A27F0 /* buttonOn.png in Resources */,
 				241E82F61AF3158F009DF9C1 /* Images.xcassets in Resources */,
+				241EF28D1AFC319A004A27F0 /* githubB.png in Resources */,
+				241EF2871AFC30F2004A27F0 /* button.png in Resources */,
 				241E82F91AF3158F009DF9C1 /* Main.storyboard in Resources */,
+				24C3DC281AF91EDA004DDD53 /* Status@2x.png in Resources */,
+				241EF2891AFC30F2004A27F0 /* emailB.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,9 +276,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				241E82F11AF3158F009DF9C1 /* ViewController.m in Sources */,
+				2408AA951AFBE34F007E4ACC /* SettingsController.m in Sources */,
+				241E82F11AF3158F009DF9C1 /* MainWindowController.m in Sources */,
 				241E82EE1AF3158F009DF9C1 /* main.m in Sources */,
 				241E82EC1AF3158F009DF9C1 /* AppDelegate.m in Sources */,
+				2408AA941AFBE1EB007E4ACC /* Counter.m in Sources */,
 				241E82F41AF3158F009DF9C1 /* KeyCount.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -411,6 +471,7 @@
 				241E830A1AF3158F009DF9C1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		241E830B1AF3158F009DF9C1 /* Build configuration list for PBXNativeTarget "KeyCountTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +480,7 @@
 				241E830D1AF3158F009DF9C1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

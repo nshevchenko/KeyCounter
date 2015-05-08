@@ -10,4 +10,13 @@
 
 @interface SettingsController : NSViewController
 
+@property (nonatomic) BOOL openSettings;
+@property (nonatomic, strong) NSViewController* parent;
+
+- (void) assignParent: (NSViewController*) parent;
+- (IBAction)quitButton:(id)sender;
+- (IBAction)resetCounter:(id)sender;
+- (IBAction)emailButton:(id)sender;
+- (IBAction)openGitHub:(id)sender;
+
 @end

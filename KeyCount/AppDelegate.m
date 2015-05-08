@@ -7,10 +7,17 @@
 //
 
 #import "AppDelegate.h"
+#import "MainWindowController.h"
+#import "SettingsController.h"
 
 @interface AppDelegate ()
 
 - (IBAction)saveAction:(id)sender;
+@property (nonatomic, strong) NSStatusItem* theItem;
+@property (nonatomic, strong) NSPopover* popover;
+@property (nonatomic, strong) NSStoryboard *storyboard;
+@property (nonatomic, strong) MainWindowController * viewC;
+@property (nonatomic, strong) id monitor;
 
 @end
 
@@ -18,11 +25,87 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     // Insert code here to initialize your application
+    
+    _storyboard = [NSStoryboard storyboardWithName:@"Main" bundle:nil];
+    _viewC = (MainWindowController *)[_storyboard instantiateControllerWithIdentifier:@"viewC"];
+    _viewC.settingsC = (SettingsController*)[_storyboard instantiateControllerWithIdentifier:@"settingsC"];
+    _viewC.openSettings = FALSE;
+    _viewC.open = FALSE;
+    [self initStatusItem];
+    [_viewC initWithLoadDictionary];
+    [self loadData];
 }
 
+- (void) loadData
+{
+    NSError *error;
+    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
+    NSEntityDescription *entity = [NSEntityDescription
+                                   entityForName:@"Counter" inManagedObjectContext:[self managedObjectContext]];
+    [fetchRequest setEntity:entity];
+    NSArray *fetchedObjects = [_managedObjectContext executeFetchRequest:fetchRequest error:&error];
+    for (Counter *counter in fetchedObjects) {
+        
+        [_viewC.alphabet setObject: counter.click
+                      forKey: counter.button];
+                 NSLog(@"read %@, %li", counter.button , [counter.click integerValue]);
+    }
+    [_viewC.tableView reloadData];
+}
+
+
+- (void) initStatusItem
+{
+    _popover = [NSPopover new];
+    _popover.contentViewController = _viewC;
+    _theItem = [[NSStatusBar systemStatusBar] statusItemWithLength:24];
+
+    [_theItem setImage: [NSImage imageNamed:@"Status"]];
+    [_theItem setHighlightMode:YES];
+    [_theItem setTitle:@""];
+    [_theItem setTarget:self];
+    [_theItem setAction: @selector(pressPopup:)];
+
+    _monitor = [NSEvent addGlobalMonitorForEventsMatchingMask: NSKeyDownMask handler:^(NSEvent* event){
+        [_viewC pressedButton:event.characters ];
+
+        //[self closePopup];
+    }];
+    // add local app monitoring of key pressing to show that it actually works :)
+    [NSEvent addLocalMonitorForEventsMatchingMask:NSKeyDownMask handler:^(NSEvent* event)
+     {
+         [_viewC pressedButton:event.characters];
+         return event;
+         
+     }];
+}
+
+
+- (void) pressPopup: (id)sender
+{
+    if(!_viewC.open)
+    {
+        [self openPopup:sender];
+    }
+    else
+        [self closePopup];
+    [_viewC onItemClick];
+}
+
+- (void) openPopup: (id)sender
+{
+    [_popover showRelativeToRect:NSZeroRect ofView:(NSView *)sender preferredEdge:NSMinYEdge];
+}
+
+- (void) closePopup
+{
+    [_popover close];
+}
+       
 - (void)applicationWillTerminate:(NSNotification *)aNotification {
     // Insert code here to tear down your application
 }
+
 
 #pragma mark - Core Data stack
 
@@ -64,6 +147,7 @@
     if (properties) {
         if (![properties[NSURLIsDirectoryKey] boolValue]) {
             failureReason = [NSString stringWithFormat:@"Expected a folder to store application data, found a file (%@).", [applicationDocumentsDirectory path]];
+            NSLog(@"doc %@", [applicationDocumentsDirectory path]);
             shouldFail = YES;
         }
     } else if ([error code] == NSFileReadNoSuchFileError) {
@@ -132,6 +216,49 @@
 - (NSApplicationTerminateReply)applicationShouldTerminate:(NSApplication *)sender {
     // Save changes in the application's managed object context before the application terminates.
     
+    NSError *error;
+    //NSLog(@"app should ter");
+    //NSLog(@"%@", _viewC.alphabet);
+    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
+    NSEntityDescription *entity = [NSEntityDescription
+                                   entityForName:@"Counter" inManagedObjectContext:[self managedObjectContext]];
+    [fetchRequest setEntity:entity];
+    NSArray *fetchedObjects = [_managedObjectContext executeFetchRequest:fetchRequest error:&error];
+    
+    
+    for(NSString* key in _viewC.alphabet )
+    {
+    
+        bool found = false;
+        for (Counter *counter in fetchedObjects)
+        {
+            if([counter.button isEqualToString:key])
+            {
+                found = TRUE;
+                counter.button = key;
+                counter.click = [_viewC.alphabet objectForKey:key];
+                
+            }
+        }
+        if(!found)
+        {
+            Counter *counter = [NSEntityDescription
+                                insertNewObjectForEntityForName:@"Counter"
+                                inManagedObjectContext:[self managedObjectContext]];
+            counter.button = key;
+            counter.click = [_viewC.alphabet objectForKey:key];
+//            NSLog(@"save %@, %@", key , [_viewC.alphabet objectForKey:key]);
+        }
+//        NSLog(@"should save %@, %li", counter.button , (long)counter.click);
+//        [_viewC.alphabet setObject: counter.click
+//                            forKey: counter.button];
+//        NSLog(@"read %@, %li", counter.button , [counter.click integerValue]);
+    }
+    
+    if (![_managedObjectContext save:&error]) {
+        NSLog(@"Whoops, couldn't save: %@", [error localizedDescription]);
+    }
+    
     if (!_managedObjectContext) {
         return NSTerminateNow;
     }
@@ -144,8 +271,7 @@
     if (![[self managedObjectContext] hasChanges]) {
         return NSTerminateNow;
     }
-    
-    NSError *error = nil;
+
     if (![[self managedObjectContext] save:&error]) {
 
         // Customize this code block to include application-specific recovery steps.              
