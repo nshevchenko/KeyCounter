@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>3217E3C4-5E5F-45C6-B620-79C26A0674A9</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>KeyCount</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>36A664EA36C22D0354E47A87535402982F89D3D1</key>
 		<string>https://github.com/nshevchenko/KeyCounter.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>KeyCount.xcodeproj/project.xcworkspace</string>
+	<string>KeyCount.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>36A664EA36C22D0354E47A87535402982F89D3D1</key>
