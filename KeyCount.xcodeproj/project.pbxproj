@@ -16,12 +16,17 @@
 		241E82F61AF3158F009DF9C1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 241E82F51AF3158F009DF9C1 /* Images.xcassets */; };
 		241E82F91AF3158F009DF9C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 241E82F71AF3158F009DF9C1 /* Main.storyboard */; };
 		241E83051AF3158F009DF9C1 /* KeyCountTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 241E83041AF3158F009DF9C1 /* KeyCountTests.m */; };
-		241EF2871AFC30F2004A27F0 /* button.png in Resources */ = {isa = PBXBuildFile; fileRef = 241EF2831AFC30F2004A27F0 /* button.png */; };
-		241EF2881AFC30F2004A27F0 /* buttonOn.png in Resources */ = {isa = PBXBuildFile; fileRef = 241EF2841AFC30F2004A27F0 /* buttonOn.png */; };
-		241EF2891AFC30F2004A27F0 /* emailB.png in Resources */ = {isa = PBXBuildFile; fileRef = 241EF2851AFC30F2004A27F0 /* emailB.png */; };
-		241EF28A1AFC30F2004A27F0 /* quit.png in Resources */ = {isa = PBXBuildFile; fileRef = 241EF2861AFC30F2004A27F0 /* quit.png */; };
-		241EF28D1AFC319A004A27F0 /* githubB.png in Resources */ = {isa = PBXBuildFile; fileRef = 241EF28B1AFC319A004A27F0 /* githubB.png */; };
-		241EF28E1AFC319A004A27F0 /* resetB.png in Resources */ = {isa = PBXBuildFile; fileRef = 241EF28C1AFC319A004A27F0 /* resetB.png */; };
+		241EF29A1AFC3D58004A27F0 /* button.png in Resources */ = {isa = PBXBuildFile; fileRef = 241EF2921AFC3D58004A27F0 /* button.png */; };
+		241EF29C1AFC3D58004A27F0 /* emailB.png in Resources */ = {isa = PBXBuildFile; fileRef = 241EF2941AFC3D58004A27F0 /* emailB.png */; };
+		241EF29D1AFC3D58004A27F0 /* githubB.png in Resources */ = {isa = PBXBuildFile; fileRef = 241EF2951AFC3D58004A27F0 /* githubB.png */; };
+		241EF29E1AFC3D58004A27F0 /* icon256.png in Resources */ = {isa = PBXBuildFile; fileRef = 241EF2961AFC3D58004A27F0 /* icon256.png */; };
+		241EF29F1AFC3D58004A27F0 /* icon512.png in Resources */ = {isa = PBXBuildFile; fileRef = 241EF2971AFC3D58004A27F0 /* icon512.png */; };
+		241EF2A01AFC3D58004A27F0 /* quit.png in Resources */ = {isa = PBXBuildFile; fileRef = 241EF2981AFC3D58004A27F0 /* quit.png */; };
+		241EF2A11AFC3D58004A27F0 /* resetB.png in Resources */ = {isa = PBXBuildFile; fileRef = 241EF2991AFC3D58004A27F0 /* resetB.png */; };
+		242550571AFC3E2400EE5D76 /* icon32.png in Resources */ = {isa = PBXBuildFile; fileRef = 242550541AFC3E2400EE5D76 /* icon32.png */; };
+		242550581AFC3E2400EE5D76 /* icon64.png in Resources */ = {isa = PBXBuildFile; fileRef = 242550551AFC3E2400EE5D76 /* icon64.png */; };
+		242550591AFC3E2400EE5D76 /* icon128.png in Resources */ = {isa = PBXBuildFile; fileRef = 242550561AFC3E2400EE5D76 /* icon128.png */; };
+		2496032E1AFC3F92006C05C9 /* icon16.png in Resources */ = {isa = PBXBuildFile; fileRef = 2496032D1AFC3F92006C05C9 /* icon16.png */; };
 		249AB1781AFAA9CA006B7F89 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 249AB1771AFAA9CA006B7F89 /* QuartzCore.framework */; };
 		24C3DC281AF91EDA004DDD53 /* Status@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 24C3DC271AF91EDA004DDD53 /* Status@2x.png */; };
 /* End PBXBuildFile section */
@@ -52,12 +57,17 @@
 		241E82FE1AF3158F009DF9C1 /* KeyCountTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KeyCountTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		241E83031AF3158F009DF9C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		241E83041AF3158F009DF9C1 /* KeyCountTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeyCountTests.m; sourceTree = "<group>"; };
-		241EF2831AFC30F2004A27F0 /* button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = button.png; path = Images.xcassets/button.png; sourceTree = "<group>"; };
-		241EF2841AFC30F2004A27F0 /* buttonOn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = buttonOn.png; path = Images.xcassets/buttonOn.png; sourceTree = "<group>"; };
-		241EF2851AFC30F2004A27F0 /* emailB.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = emailB.png; path = Images.xcassets/emailB.png; sourceTree = "<group>"; };
-		241EF2861AFC30F2004A27F0 /* quit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = quit.png; path = Images.xcassets/quit.png; sourceTree = "<group>"; };
-		241EF28B1AFC319A004A27F0 /* githubB.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = githubB.png; path = Images.xcassets/githubB.png; sourceTree = "<group>"; };
-		241EF28C1AFC319A004A27F0 /* resetB.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = resetB.png; path = Images.xcassets/resetB.png; sourceTree = "<group>"; };
+		241EF2921AFC3D58004A27F0 /* button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = button.png; path = images/button.png; sourceTree = "<group>"; };
+		241EF2941AFC3D58004A27F0 /* emailB.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = emailB.png; path = images/emailB.png; sourceTree = "<group>"; };
+		241EF2951AFC3D58004A27F0 /* githubB.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = githubB.png; path = images/githubB.png; sourceTree = "<group>"; };
+		241EF2961AFC3D58004A27F0 /* icon256.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon256.png; path = images/icon256.png; sourceTree = "<group>"; };
+		241EF2971AFC3D58004A27F0 /* icon512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon512.png; path = images/icon512.png; sourceTree = "<group>"; };
+		241EF2981AFC3D58004A27F0 /* quit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = quit.png; path = images/quit.png; sourceTree = "<group>"; };
+		241EF2991AFC3D58004A27F0 /* resetB.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = resetB.png; path = images/resetB.png; sourceTree = "<group>"; };
+		242550541AFC3E2400EE5D76 /* icon32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon32.png; path = images/icon32.png; sourceTree = "<group>"; };
+		242550551AFC3E2400EE5D76 /* icon64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon64.png; path = images/icon64.png; sourceTree = "<group>"; };
+		242550561AFC3E2400EE5D76 /* icon128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon128.png; path = images/icon128.png; sourceTree = "<group>"; };
+		2496032D1AFC3F92006C05C9 /* icon16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon16.png; path = images/icon16.png; sourceTree = "<group>"; };
 		249AB1771AFAA9CA006B7F89 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		249AB1791AFAC897006B7F89 /* SettingsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsController.h; sourceTree = "<group>"; };
 		249AB17A1AFAC897006B7F89 /* SettingsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsController.m; sourceTree = "<group>"; };
@@ -158,14 +168,19 @@
 		241EF28F1AFC31AF004A27F0 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				241EF2921AFC3D58004A27F0 /* button.png */,
+				241EF2941AFC3D58004A27F0 /* emailB.png */,
+				241EF2951AFC3D58004A27F0 /* githubB.png */,
+				241EF2961AFC3D58004A27F0 /* icon256.png */,
+				242550541AFC3E2400EE5D76 /* icon32.png */,
+				2496032D1AFC3F92006C05C9 /* icon16.png */,
+				242550551AFC3E2400EE5D76 /* icon64.png */,
+				242550561AFC3E2400EE5D76 /* icon128.png */,
+				241EF2971AFC3D58004A27F0 /* icon512.png */,
+				241EF2981AFC3D58004A27F0 /* quit.png */,
+				241EF2991AFC3D58004A27F0 /* resetB.png */,
 				241E82F51AF3158F009DF9C1 /* Images.xcassets */,
-				241EF28B1AFC319A004A27F0 /* githubB.png */,
-				241EF28C1AFC319A004A27F0 /* resetB.png */,
 				24C3DC271AF91EDA004DDD53 /* Status@2x.png */,
-				241EF2831AFC30F2004A27F0 /* button.png */,
-				241EF2841AFC30F2004A27F0 /* buttonOn.png */,
-				241EF2851AFC30F2004A27F0 /* emailB.png */,
-				241EF2861AFC30F2004A27F0 /* quit.png */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -250,15 +265,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				241EF28E1AFC319A004A27F0 /* resetB.png in Resources */,
-				241EF28A1AFC30F2004A27F0 /* quit.png in Resources */,
-				241EF2881AFC30F2004A27F0 /* buttonOn.png in Resources */,
 				241E82F61AF3158F009DF9C1 /* Images.xcassets in Resources */,
-				241EF28D1AFC319A004A27F0 /* githubB.png in Resources */,
-				241EF2871AFC30F2004A27F0 /* button.png in Resources */,
+				241EF29A1AFC3D58004A27F0 /* button.png in Resources */,
 				241E82F91AF3158F009DF9C1 /* Main.storyboard in Resources */,
+				2496032E1AFC3F92006C05C9 /* icon16.png in Resources */,
+				241EF29E1AFC3D58004A27F0 /* icon256.png in Resources */,
+				242550581AFC3E2400EE5D76 /* icon64.png in Resources */,
+				242550591AFC3E2400EE5D76 /* icon128.png in Resources */,
+				241EF2A11AFC3D58004A27F0 /* resetB.png in Resources */,
+				241EF29F1AFC3D58004A27F0 /* icon512.png in Resources */,
+				242550571AFC3E2400EE5D76 /* icon32.png in Resources */,
+				241EF2A01AFC3D58004A27F0 /* quit.png in Resources */,
 				24C3DC281AF91EDA004DDD53 /* Status@2x.png in Resources */,
-				241EF2891AFC30F2004A27F0 /* emailB.png in Resources */,
+				241EF29C1AFC3D58004A27F0 /* emailB.png in Resources */,
+				241EF29D1AFC3D58004A27F0 /* githubB.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -398,10 +418,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = KeyCount/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -409,10 +432,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = KeyCount/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
