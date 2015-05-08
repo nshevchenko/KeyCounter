@@ -38,7 +38,7 @@
 
 - (IBAction)openGitHub:(id)sender
 {
-    [[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:@"http://www.github.com"]];
+    [[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:@"https://github.com/nshevchenko/KeyCounter"]];
 }
 
 
